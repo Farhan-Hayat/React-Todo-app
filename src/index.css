@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.App{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mainCont{
+  position: absolute;
+  top: 100px;
+  width: 500px;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1{
+  text-align: center;
+  color: red;
+  margin-bottom: 30px;
+}
+
+.addTaskCont{
+  display: flex;
+  /* border: 1px solid black; */
+  height: 40px;
+}
+
+.addTaskCont input{
+  /* height: 40px; */
+  width: 100%;
+  border: 1px solid #F31559;
+  border-right: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: none;
+  padding: 0 0 0 5px;
+  align-self: stretch;
+}
+
+.addTaskCont button{
+  width: 25%;
+  border: 1px solid #F31559;
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  outline: none;
+  align-self: stretch;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #F31559;
+  color: white;
+}
+
+.addTaskCont button:hover{
+  background-color: #ff5252;
+}
+
+.taskCardCont{
+  padding: 10px 0;
+}
+
+.taskCard{
+  margin: 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+}
+
+.taskCard p{
+  width: 100%;
+  padding: 0 10px;
+}
+
+.taskCard button{
+  background-color: red;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  /* font-weight: bold; */
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.taskCard button:hover{
+  background-color: rgba(255, 27, 27, 0.856);
+}
